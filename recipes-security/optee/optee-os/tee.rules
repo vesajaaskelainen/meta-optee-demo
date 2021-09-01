@@ -1,0 +1,2 @@
+KERNEL=="teepriv[0-9]*", GROUP="tee", MODE="0660"
+KERNEL=="tee[0-9]*", GROUP="teeclnt", MODE="0660"
