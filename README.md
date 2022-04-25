@@ -6,15 +6,15 @@ Please see the corresponding sections below for details.
 
 poky:
 - URI: git://git.yoctoproject.org/poky
-- branch: master (tested with commit `a5b257006b2c480d86e09909cdafb3c8ba05b863`)
+- branch: kirkstone (tested with commit `a2acea463328ffa536487166719393020996fb28`)
 
 meta-arm:
 - URI: git://git.yoctoproject.org/meta-arm
-- branch: master (tested with commit `13972eed3c9557736b6c30dbd93e8b0fb2a066b7`)
+- branch: master (tested with commit `9f0c90506661b34d5546f5f9ae9a43f07ed78ee9`)
 
 meta-openembedded:
 - URI: git://git.openembedded.org/meta-openembedded
-- branch: master (tested with commit `3cf16d3012703617ae835e875083105feee07fbe`)
+- branch: kirkstone (tested with commit `64156a6f8f3b4527c4732c91936aee0a167acb48`)
 
 
 # Adding the meta-optee-demo layer to your build
@@ -137,7 +137,7 @@ Please note that compiling OP-TEE for other machines requires additional work an
 
 Notes on how TEE Identity based ACLs work:
 
-https://github.com/OP-TEE/optee_client/blob/3.14.0/libckteec/include/pkcs11_ta.h#L887
+https://github.com/OP-TEE/optee_client/blob/3.16.0/libckteec/include/pkcs11_ta.h#L887
 
 OP-TEE's UUID namespace in Linux kernel: `58ac9ca0-2086-4683-a1b8-ec4bc08e01b6`, the definition is here:
 
@@ -171,7 +171,7 @@ Supported login types today are:
 
 See more details from source:
 
-https://github.com/OP-TEE/optee_client/blob/3.14.0/libckteec/src/invoke_ta.c#L252
+https://github.com/OP-TEE/optee_client/blob/3.16.0/libckteec/src/invoke_ta.c#L252
 
 
 Example configuration sequence:
