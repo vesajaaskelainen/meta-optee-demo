@@ -1,15 +1,10 @@
 FILESEXTRAPATHS:prepend := "${THISDIR}/${PN}:"
 
-inherit useradd gitpkgv
+inherit useradd
 
-PV = "gitr${SRCPV}"
-PKGV = "gitr${GITPKGV}"
-
-SRC_URI = " \
-    git://github.com/vesajaaskelainen/optee_os.git;branch=devel \
+SRC_URI += " \
     file://tee.rules \
 "
-SRCREV = "${AUTOREV}"
 
 do_install:append () {
     # install path should match the value set in optee-client/tee-supplicant
